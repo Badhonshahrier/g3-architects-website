@@ -1,8 +1,177 @@
-
-
 .work-sans-font {
-  font-family: "Work Sans", serif;
-  font-optical-sizing: auto;
-  font-weight:400;
-  font-style: normal;
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    max-width: 1152px;
+    margin: 0 auto;
+    background: #FFF;
+}
+
+
+/* shared styles */
+.display-flex {
+    display: flex;
+}
+
+/* dark 02 */
+.text-gray {
+    color: var(--Dark-02, #424242);
+}
+
+/* dark 03 */
+.text-light-gray, .features-description {
+    color: var(--Dark-03, #727272);
+}
+
+.bg-light {
+
+    background: rgba(255, 144, 14, 0.10);
+}
+
+.btn-primary {
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 24px;
+    font-size: 1.25rem;
+    border: none;
+    color: #FFF;
+
+    font-weight: 600;
+}
+
+
+/* header styles */
+
+/* nav bar styles */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.brand {
+    font-size: 3.5rem;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.banner,
+.navbar {
+    width: 1152px;
+    margin: 0 auto;
+
+}
+
+.banner-content {
+    max-width: 850px;
+    width: 800px;
+    /* line-height: 40px; */
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {}
+
+.banner-img {
+    width: 100%;
+}
+
+/* teams and features related styles */
+.teams {
+    align-items: center;
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 1536px;
+
+}
+
+.our-features {
+    margin-left: 70px;
+}
+.features-description{
+    margin: 30px auto;
+   
+
+font-size: 1rem;
+
+font-weight: 400;
+
+}
+
+main>section {
+    margin-top: 130px;
+}
+
+.features {
+    color: #FF900E;
+
+    font-size: 2.8rem;
+
+    font-weight: 700;
+
+}
+
+.of-our {
+    color: var(--Dark-01, #131313);
+
+    font-size: 2.8rem;
+
+    font-weight: 700;
+
+}
+
+.quick-list {
+    color: var(--Dark-03, #727272);
+
+    font-size: 2.8rem;
+
+    font-weight: 500;
+
+
+
+
+}
+
+/* responsive */
+@media screen and (max-width:576px) {
+
+    .navbar,
+    .nav-item,
+    .teams {
+        flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* main section */
+
+
+
+
+
+
+/* some facts */
+.card-container{
+    border-radius: 8px;
+border: 1px solid #FF900E;
+gap: 50px;
+text-align: center;
 }
