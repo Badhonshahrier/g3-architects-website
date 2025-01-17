@@ -144,30 +144,62 @@ main>section {
 
     font-weight: 500;
 
-
-
-
 }
 
-/* responsive */
-@media screen and (max-width:576px) {
-
-    .navbar,
-    .nav-item,
-    .teams {
-        flex-direction: column;
-    }
-
-    .teams-img-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
 
 
 /* main section */
 
+/* features section */
+#feature-section-title{
+    color: var(--Dark-01, #131313);
+    border-left: 5px solid #FF900E;
+padding: 20px;
 
 
+
+font-size: 2.8rem;
+
+font-weight: 700;
+
+}
+.text-light-gray{
+  
+
+font-size: 1rem;
+
+font-weight: 400;
+
+}
+.features-card h4{
+    color: var(--Dark-01, #131313);
+margin-bottom: 0;
+font-size: 1.25rem;
+
+font-weight: 600;
+
+}
+.features-card p {
+color: var(--Dark-03, #727272);
+font-size: 1rem;
+font-weight: 400;
+margin-top: 10px;
+gap: 10px;
+
+
+
+}
+.features-card{
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+padding: 30px;
+margin-top: 0;
+}
+.features-creation{
+    display: flex;
+    gap: 100px;
+}
 
 
 
@@ -210,8 +242,7 @@ max-width: 430px;
     margin-top: 10px;
     margin-bottom: 2px;
     font-size: 2.8rem;
-    /* 
-font-weight: 600; */
+
 
 }
 
@@ -226,4 +257,73 @@ font-weight: 600; */
 
     font-weight: 600;
 
+}
+
+
+/* sponsor sections */
+.sponsor-img-container{
+    display: flex;
+   
+justify-content: space-between;
+    width: 100%;
+    mix-blend-mode: luminosity;
+    gap: 80px;
+}
+.sponsor-title{
+    color: var(--Dark-01, #131313);
+    text-align: center;
+font-size: 2.5em;
+font-style: normal;
+font-weight: 700;
+
+}
+.sponsor-sub-title{
+    color: var(--Dark-03, #727272);
+    text-align: center;
+margin-top: 24px;
+margin-bottom: 50px;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+  
+
+}
+
+
+
+/* responsive */
+@media screen and (max-width:576px) {
+
+    .navbar,
+    .nav-item,
+    
+    .sponsor-img-container {
+        flex-direction: column;
+    }
+    .teams{
+        flex-direction: column;
+      
+    }
+    .our-features, .some-facts{
+       text-align: center;
+   
+    }
+
+    .teams-img-container,  {
+        grid-template-columns: repeat(1, 1fr);
+        width: 50%;
+    }
+    .facts-container{
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 10px;
+    }
+    .sponsor-img-container{
+        grid-template-columns: repeat(1, 1fr);
+        width: 50%;
+     margin-left: 120px;
+   
+ 
+    }
 }
